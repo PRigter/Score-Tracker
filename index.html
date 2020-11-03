@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <title>Score Keeper</title>
+    <style type="text/css">
+        .green {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by2">
+                                <img src="https://images.unsplash.com/photo-1475440197469-e367ec8eeb19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=1050&q=80"
+                                    alt="Placeholder image">
+                            </figure>
+                        </div>
+
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                Score Tracker
+                            </p>
+                        </header>
+
+                        <div class="card-content">
+                            <div id="result" class="content">
+                                <h1 class="title is-1">
+                                    <span class="player-1-result">0</span>
+                                    to
+                                    <span class="player-2-result">0</span>
+                                </h1>
+                                <p class="subtitle">Track Score with buttons below</p>
+                            </div>
+
+                            <div class="maxScore">
+                                Playing to:
+                                <div class="field max-play-container column is-one-fifth is-inline-block">
+                                    <div class="control">
+                                        <input class="input is-primary input-max-score is-inline-block"
+                                            id="maxScore" type="number" min="2">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <footer class="card-footer">
+                            <button class="button is-primary card-footer-item is-medium player-one">Player One</button>
+                            <button class="button is-info card-footer-item is-medium player-two">Player Two</button>
+                            <button class="button is-danger card-footer-item is-medium reset-btn">Reset</button>
+                        </footer>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
