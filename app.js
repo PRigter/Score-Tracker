@@ -3,7 +3,7 @@
     // With Object Oriented, we'll create an Object for each player
     // and create the function where we will pass the objects properties as functions arguments
 
-    // Players have: Score /-/ Display /-/ Button
+// Players have: Score /-/ Display /-/ Button
 const p1 = {
     score: 0,
     display: document.querySelector(".player-1-result"),
